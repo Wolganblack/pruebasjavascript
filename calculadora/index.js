@@ -42,10 +42,10 @@ function calcula() {
 
         }
         presultado.innerText = "=" + resultadofinal;
-        txtresuldado.innerText = "=" + resultadofinal;
+        txtresultado.innerText = "=" + resultadofinal;
     } else {
-        txtresuldado1.innerText = "Calculo ImPosible";
-        txtresuldado.innerText = "Calculo ImPosible";
+        presultado.innerText = "Calculo ImPosible";
+        txtresultado.innerText = "Calculo ImPosible";
     }
     return;
 }

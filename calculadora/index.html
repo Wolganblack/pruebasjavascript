@@ -32,12 +32,12 @@
     <h1>
         <center>"Aplicacion de Calculadora"</center>
     </h1>
-    <form>
+    <form id="calculadora" onsubmit="javascript:calcula();return false;">
 
         <input type="text" id="operador1" placeholder="Operador 1" required>
         <input type="text" id="operador" placeholder="+,-,*,/" required>
         <input type="text" id="operador2" placeholder="Operador 2" required>
-        <input type="submit" value="calcular" id="calcular" onclick="calcula">
+        <input type="submit" value="calcular">
         <input type="text" id="resultado" placeholder="resultado">
         <p id="Resultado1"></p>
 
