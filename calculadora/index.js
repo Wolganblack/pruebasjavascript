@@ -4,7 +4,7 @@ const txtop1 = document.getElementById("operador1");
 const txtoperador = document.getElementById("operador");
 const txtoperador2 = document.getElementById("operador2");
 const btncalculador = document.getElementById("calcular");
-const txtresultado = document.getElementById("resultado");
+const txtresultado = document.getElementById("resultadOperacion");
 const presultado = document.getElementById("Resultado1");
 
 /*btncalculador.addEventListener("click", calcular);*/
@@ -42,10 +42,10 @@ function calcula() {
 
         }
         presultado.innerText = "=" + resultadofinal;
-        txtresultado.innerText = "=" + resultadofinal;
+        txtresultado.value = "=" + resultadofinal;
     } else {
         presultado.innerText = "Calculo ImPosible";
-        txtresultado.innerText = "Calculo ImPosible";
+        txtresultado.value = "Calculo ImPosible";
     }
     return;
 }
