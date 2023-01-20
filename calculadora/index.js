@@ -16,10 +16,10 @@ function calcula() {
     const op2 = parseFloat(txtoperador2.value);
 
     if (
-        operador == "+" ||
-        operador == "-" ||
-        operador == "/" ||
-        operador == "*"
+        (operador == "+" ||
+            operador == "-" ||
+            operador == "/" ||
+            operador == "*") && (!isNaN(op1) && !isNaN(op2))
     ) {
 
         let resultadofinal;
@@ -41,11 +41,16 @@ function calcula() {
                 break;
 
         }
+        txtresultado.style = "color:black"
+        presultado.style = "color:black"
         presultado.innerText = "=" + resultadofinal;
         txtresultado.value = "=" + resultadofinal;
+
     } else {
+        presultado.style = "color:red"
         presultado.innerText = "Calculo ImPosible";
         txtresultado.value = "Calculo ImPosible";
+        txtresultado.style = "color:red"
     }
     return;
 }
